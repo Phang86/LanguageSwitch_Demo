@@ -1,20 +1,36 @@
 package com.hnhy.languageswitch_demo.bean;
 
+import org.litepal.annotation.Column;
+import org.litepal.crud.LitePalSupport;
+
 import java.util.List;
 
-public class Lang {
+public class Lang extends LitePalSupport {
 
     private int id;
     //activity名字
     public String activityName;
     //控件id   例如：2131231049
+    @Column(unique = true)
     private long viewId;
     //控件类型  例如：Button、TextView
     private  String viewType;
     //控件文本英文
+    @Column(nullable = false)
     private  String enName;
     //控件文本中文
     private  String cnName;
+    //控件语言状态  0：中文  1：英文
+    @Column(defaultValue = "0")
+    private int languageState;
+
+    public int getLanguageState() {
+        return languageState;
+    }
+
+    public void setLanguageState(int languageState) {
+        this.languageState = languageState;
+    }
 
     public int getId() {
         return id;
@@ -73,15 +89,24 @@ public class Lang {
         this.cnName = cnName;
     }
 
+    public Lang(String activityName, long viewId, String viewTpye, String enName, String cnName) {
+        this.activityName = activityName;
+        this.viewId = viewId;
+        this.viewType = viewTpye;
+        this.enName = enName;
+        this.cnName = cnName;
+    }
+
     @Override
     public String toString() {
         return "Lang{" +
                 "id=" + id +
                 ", activityName='" + activityName + '\'' +
                 ", viewId=" + viewId +
-                ", viewTpye='" + viewType + '\'' +
+                ", viewType='" + viewType + '\'' +
                 ", enName='" + enName + '\'' +
                 ", cnName='" + cnName + '\'' +
+                ", languageState=" + languageState +
                 '}';
     }
 }

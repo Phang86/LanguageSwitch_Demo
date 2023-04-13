@@ -9,48 +9,51 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.hnhy.languageswitch_demo.MainActivity;
+import com.hnhy.languageswitch_demo.R;
 import com.hnhy.languageswitch_demo.bean.Lang;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-public class LangUtils {
+public class  LangUtils{
     private static List<Lang> langs = new ArrayList<Lang>();
-    private static Activity activity;
+    public Activity activity;
 
-    public static void SetViewLang(List<View> views){
-        for (View item : views) {
-            if(item.getClass().getName().equals("android.widget.TextView")){
-                TextView textView=  ((TextView)activity.findViewById(item.getId()));
-                langs.add(new
-                        Lang(1, MainActivity.class.getName(),textView.getId(),textView.getClass().getName(),
-                        textView.getText().toString()+"------",textView.getText().toString()+"------"));
-            }else if(item.getClass().getName().equals("android.widget.Button")){
-                Button textView =  ((Button)activity.findViewById(item.getId()));
-                langs.add(new
-                        Lang(2, MainActivity.class.getName(),textView.getId(),textView.getClass().getName(),
-                        textView.getText().toString()+"------",textView.getText().toString()+"------"));
-                Log.e("TAG", "SetViewLang: "+langs.toString());
-            }
-        }
-    };
+    public LangUtils(Activity activity){
+        this.activity = activity;
+    }
 
-    public static void GetViewLang(List<View> views){
+    public void SetViewLang(List<View> views) {
         for (View item : views) {
-            if(item.getClass().getName().equals("android.widget.TextView")){
-                TextView textView=  ((TextView)activity.findViewById(item.getId()));
-                textView.setText(GetLang(textView.getId()));
-                Log.e("TAG", "GetViewLang: TextView"+textView.getText().toString());
-            } else if(item.getClass().getName().equals("android.widget.Button")){
-                Button textView = ((Button)activity.findViewById(item.getId()));
-                textView.setText(GetLang(textView.getId()));
-                Log.e("TAG", "GetViewLang: Button"+textView.getText().toString());
+            if ("android.widget.TextView" == item.getClass().getName()) {
+                TextView textView = ((TextView) activity.findViewById(item.getId()));
+//                MainActivity.class.getName()+((TextView)(item)).getId()
+                langs.add(new
+                        Lang(2, activity.getClass().getName(), textView.getId(), textView.getClass().getName(),
+                        textView.getText().toString() + "------1111", textView.getText().toString() + "------"));
+            } else if ("android.widget.Button" == item.getClass().getName()) {
+                Button textView = ((Button) activity.findViewById(item.getId()));
+                langs.add(new
+                        Lang(2, activity.getClass().getName(), textView.getId(), textView.getClass().getName(),
+                        textView.getText().toString() + "------1111", textView.getText().toString() + "------"));
             }
         }
     }
 
-    public static String GetLang(int langId){
+    public void GetViewLang(List<View> views){
+        for (View item : views) {
+            if("android.widget.TextView" == item.getClass().getName()){
+                TextView textView=  ((TextView)activity.findViewById(item.getId()));
+                textView.setText(GetLang(textView.getId()));
+            } else if("android.widget.Button" == item.getClass().getName()){
+                Button textView = ((Button)activity.findViewById(item.getId()));
+                textView.setText(GetLang(textView.getId()));
+            }
+        }
+    }
+
+    public String GetLang(int langId){
         String temp= "langId";
         for (Lang ll:langs) {
             if(ll.getViewId() == langId){
@@ -61,13 +64,12 @@ public class LangUtils {
         return  temp;
     }
 
-    public static List<View> getAllChildViews(Activity activity) {
-        activity = activity;
+    public List<View> getAllChildViews() {
         View view = activity.getWindow().getDecorView();
         return getAllChildViews(view);
     }
 
-    public static List<View> getAllChildViews(View parent) {
+    public List<View> getAllChildViews(View parent) {
         List<View> allchildren = new ArrayList<View>();
         if (parent instanceof ViewGroup) {
             ViewGroup vp = (ViewGroup) parent;
