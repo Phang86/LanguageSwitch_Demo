@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">LanguageSwitch_Demo</string>
+
+    <string name="text1">11111111111</string>
+    <string name="text2">22222222222</string>
+    <string name="text3">33333333333</string>
+    <string name="text4">44444444444</string>
+    <string name="text5">55555555555</string>
+    <string name="text6">66666666666</string>
+    <string name="text7">77777777777</string>
+    <string name="text8">88888888888</string>
+    <string name="text9">99999999999</string>
+    <string name="text10">10000000000</string>
+    <string name="text20">20000000000</string>
+    <string name="text30">30000000000</string>
+    <string name="text31">修改</string>
 </resources>

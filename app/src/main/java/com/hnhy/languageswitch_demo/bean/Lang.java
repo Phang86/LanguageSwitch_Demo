@@ -97,6 +97,18 @@ public class Lang extends LitePalSupport {
         this.cnName = cnName;
     }
 
+    public Lang(String activityName, long viewId, String viewTpye, String enName, String cnName, int languageState) {
+        this.activityName = activityName;
+        this.viewId = viewId;
+        this.viewType = viewTpye;
+        this.enName = enName;
+        this.cnName = cnName;
+        this.languageState = languageState;
+    }
+
+    public Lang() {
+    }
+
     @Override
     public String toString() {
         return "Lang{" +
@@ -109,4 +121,6 @@ public class Lang extends LitePalSupport {
                 ", languageState=" + languageState +
                 '}';
     }
+
+
 }

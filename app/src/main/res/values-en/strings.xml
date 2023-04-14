@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">LanguageSwitch_Demo</string>
+
+    <string name="text1">one</string>
+    <string name="text2">two</string>
+    <string name="text3">three</string>
+    <string name="text4">four</string>
+    <string name="text5">five</string>
+    <string name="text6">six</string>
+    <string name="text7">seven</string>
+    <string name="text8">eight</string>
+    <string name="text9">nine</string>
+    <string name="text10">ten</string>
+    <string name="text20">twenty</string>
+    <string name="text30">thirty</string>
+    <string name="text31">update</string>
+</resources>

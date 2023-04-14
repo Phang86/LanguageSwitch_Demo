@@ -19,9 +19,10 @@ public class TestActivity extends BaseActivity {
     @Override
     protected void initView() {
         TAG = "TestActivity";
-        List<View> list = getAllChildViews();
-        SetViewLang(list);
-        GetViewLang(list);
+
+//        List<View> list = getAllChildViews();
+//        SetViewLang(list);
+//        GetViewLang(list);
     }
 
     @Override
