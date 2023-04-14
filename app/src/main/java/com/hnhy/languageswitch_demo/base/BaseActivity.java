@@ -25,7 +25,7 @@ import java.util.Locale;
 
 public abstract class BaseActivity extends Activity {
     public static List<Lang> langs = LitePal.findAll(Lang.class);
-    public static String TAG = "";
+    public static String TAG = "BaseActivity";
     private String zh = "zh";
     private String CN = "CN";
     private String en = "en";
@@ -128,7 +128,7 @@ public abstract class BaseActivity extends Activity {
     }
 
     //获取语言  viewId:控件id  language:语言  country:国家
-    public String getLanguage(int viewId, String language, String country){
+    public String getLanguage(int viewId, String language, String country) {
         Locale locale = new Locale(language, country);
         Configuration configuration = new Configuration(getResources().getConfiguration());
         configuration.setLocale(locale);
@@ -140,18 +140,6 @@ public abstract class BaseActivity extends Activity {
 //        String stringRes = getResources().getString(stringId);
         return createConfigurationContext(configuration).getResources().getString(stringId);
     }
-
-//    private String getStrId(int viewId){
-//        // 获取 text_view
-//        String name = getResources().getResourceEntryName(viewId);
-//        // 获取 text_view 对应的 string 资源的 id
-//        int stringId = getResources().getIdentifier(name, "string", getPackageName());
-//        // 获取字符串资源
-//        String stringRes = getResources().getString(stringId);
-//        return stringRes;
-//    }
-
-
 }
 
 
