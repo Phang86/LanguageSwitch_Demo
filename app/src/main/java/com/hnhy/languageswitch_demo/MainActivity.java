@@ -72,8 +72,6 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-//        deleteAll();
-        int flag = 0;
     }
 
     public void jumpIntent(View view) {
