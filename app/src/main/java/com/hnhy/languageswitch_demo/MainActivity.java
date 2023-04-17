@@ -35,35 +35,34 @@ public class MainActivity extends BaseActivity {
 
     private void updateLanguage() {
         ContentValues values = new ContentValues();
-        int flag = getLanguage();
+        String flag = getLanguage();
         Log.e(TAG, "updateLanguage: "+flag);
-        if (flag == 0){
-            values.put("languageState",1);
+        if ("zh-cn".equals(flag)){
+            values.put("languageState","en-us");
             int i = LitePal.updateAll(Lang.class, values);
             if (i > 0){
-                Toast.makeText(this, "修改成功 1", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "修改成功 en-US", Toast.LENGTH_SHORT).show();
                 getViewInfo();
                 return;
             }
-            Toast.makeText(this, "修改失败 1", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "修改失败 en-US", Toast.LENGTH_SHORT).show();
         } else {
-            values.put("languageState", 0);
+            values.put("languageState", "zh-cn");
             int i = LitePal.updateAll(Lang.class, values);
             if (i > 0) {
-                Toast.makeText(this, "修改成功 0", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "修改成功 zh-CN", Toast.LENGTH_SHORT).show();
                 getViewInfo();
                 return;
             }
-            Toast.makeText(this, "修改失败 0", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "修改失败 zh-CN", Toast.LENGTH_SHORT).show();
         }
     }
 
-    private int getLanguage(){
-        int languageFlag = 0;
+    private String getLanguage(){
+        String languageFlag = "zh-cn";
         List<Lang> langs = LitePal.select("languageState").find(Lang.class);
         if (!langs.isEmpty()){
-            int languageState = langs.get(0).getLanguageState();
-            Log.e(TAG, "getLanguage: "+languageState);
+            String languageState = langs.get(0).getLanguageState();
             languageFlag = languageState;
             return languageFlag;
         }
@@ -72,6 +71,7 @@ public class MainActivity extends BaseActivity {
 
     @Override
     protected void initData() {
+//        deleteAll();
     }
 
     public void jumpIntent(View view) {
@@ -91,6 +91,5 @@ public class MainActivity extends BaseActivity {
     public void updateLanguage(View view) {
         updateLanguage();
     }
-
 
 }

@@ -8,56 +8,90 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text1"
-        android:id="@+id/text1"
         />
 
     <TextView
+        android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text2"
-        android:id="@+id/text2"
         />
 
     <Button
+        android:id="@+id/text3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text3"
-        android:id="@+id/text3"
         />
 
     <Button
+        android:id="@+id/text4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text4"
-        android:id="@+id/text4"
-        android:onClick="jumpIntent"/>
+        android:onClick="jumpIntent"
+        />
 
     <Button
+        android:id="@+id/text10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text10"
-        android:id="@+id/text10"/>
+        />
 
     <Button
+        android:id="@+id/text20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text20"
-        android:id="@+id/text20"/>
+        />
 
     <Button
+        android:id="@+id/text30"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text30"
-        android:id="@+id/text30"/>
+        />
 
     <Button
+        android:id="@+id/text31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text31"
-        android:id="@+id/text31"
-        android:onClick="updateLanguage"/>
+        android:onClick="updateLanguage"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio"
+            />
+
+    </RadioGroup>
+
+    <com.hnhy.languageswitch_demo.view.MyPasswordEditText
+        android:id="@+id/passedHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/passedHint"
+        android:inputType="textPassword"
+        />
+
+    <com.hnhy.languageswitch_demo.view.MyEditText
+        android:id="@+id/myEd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/myEd"
+        />
 
 </LinearLayout>

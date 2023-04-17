@@ -10,7 +10,7 @@ public class Lang extends LitePalSupport {
     private int id;
     //activity名字
     public String activityName;
-    //控件id   例如：2131231049
+    //控件id   例如：2131231049；设置控件id唯一，避免重复
     @Column(unique = true)
     private long viewId;
     //控件类型  例如：Button、TextView
@@ -20,15 +20,15 @@ public class Lang extends LitePalSupport {
     private  String enName;
     //控件文本中文
     private  String cnName;
-    //控件语言状态  0：中文  1：英文
-    @Column(defaultValue = "0")
-    private int languageState;
+    //控件语言状态；zh-cn：中文；en-us：英文；默认中文
+    @Column(defaultValue = "zh-cn")
+    private String languageState;
 
-    public int getLanguageState() {
+    public String getLanguageState() {
         return languageState;
     }
 
-    public void setLanguageState(int languageState) {
+    public void setLanguageState(String languageState) {
         this.languageState = languageState;
     }
 
@@ -97,7 +97,7 @@ public class Lang extends LitePalSupport {
         this.cnName = cnName;
     }
 
-    public Lang(String activityName, long viewId, String viewTpye, String enName, String cnName, int languageState) {
+    public Lang(String activityName, long viewId, String viewTpye, String enName, String cnName, String languageState) {
         this.activityName = activityName;
         this.viewId = viewId;
         this.viewType = viewTpye;

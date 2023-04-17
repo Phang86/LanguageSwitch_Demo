@@ -4,7 +4,7 @@
     <string name="text1">11111111111</string>
     <string name="text2">22222222222</string>
     <string name="text3">33333333333</string>
-    <string name="text4">44444444444</string>
+    <string name="text4">下个页面</string>
     <string name="text5">55555555555</string>
     <string name="text6">66666666666</string>
     <string name="text7">77777777777</string>
@@ -14,4 +14,7 @@
     <string name="text20">20000000000</string>
     <string name="text30">30000000000</string>
     <string name="text31">修改</string>
+    <string name="radio">复选框</string>
+    <string name="passedHint">自定义密码文本输入</string>
+    <string name="myEd">自定义普通文本输入</string>
 </resources>

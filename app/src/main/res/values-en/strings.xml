@@ -1,10 +1,9 @@
 <resources>
     <string name="app_name">LanguageSwitch_Demo</string>
-
     <string name="text1">one</string>
     <string name="text2">two</string>
     <string name="text3">three</string>
-    <string name="text4">four</string>
+    <string name="text4">next activity</string>
     <string name="text5">five</string>
     <string name="text6">six</string>
     <string name="text7">seven</string>
@@ -14,4 +13,7 @@
     <string name="text20">twenty</string>
     <string name="text30">thirty</string>
     <string name="text31">update</string>
+    <string name="radio">radio</string>
+    <string name="passedHint">PassWord input</string>
+    <string name="myEd">EditText input</string>
 </resources>
