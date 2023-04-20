@@ -9,7 +9,11 @@ import android.util.Log;
 public class Test {
     private static String TAG = "Test";
 
-    public static void showLog(String msg){
-        Log.e(TAG, "showLog: "+msg);
+    public static void showLoge(String msg){
+        Log.e(TAG, "showLoge: "+msg);
+    }
+
+    public static void showLogi(String msg){
+        Log.i(TAG, "showLogi: "+msg);
     }
 }
