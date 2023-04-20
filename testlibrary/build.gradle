@@ -2,9 +2,6 @@ plugins {
     id 'com.android.library'
 }
 
-apply plugin:'com.github.dcendents.android-maven'
-
-
 android {
     namespace 'com.gy.testlibrary'
     compileSdkVersion 29
