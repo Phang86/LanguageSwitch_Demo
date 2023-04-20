@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 apply plugin: 'org.greenrobot.greendao'
-apply plugin:'com.github.dcendents.android-maven'
+
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.0"
 
     defaultConfig {
+
         applicationId "com.hnhy.languageswitch_demo"
         minSdkVersion 21
         targetSdkVersion 29
