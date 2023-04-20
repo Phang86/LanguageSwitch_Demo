@@ -7,42 +7,42 @@
     android:orientation="vertical"
     tools:context=".TestActivity">
 
-    <TextView
-        android:id="@+id/text5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text5"
-        android:layout_gravity="center"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/text5"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text5"-->
+<!--        android:layout_gravity="center"-->
+<!--        />-->
 
-    <TextView
-        android:id="@+id/text6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text6"
-        android:layout_gravity="center"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/text6"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text6"-->
+<!--        android:layout_gravity="center"-->
+<!--        />-->
 
-    <TextView
-        android:id="@+id/text7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text7"
-        android:layout_gravity="center"
-        />
+<!--    <TextView-->
+<!--        android:id="@+id/text7"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text7"-->
+<!--        android:layout_gravity="center"-->
+<!--        />-->
 
-    <Button
-        android:id="@+id/text8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text8"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/text8"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text8"-->
+<!--        />-->
 
-    <Button
-        android:id="@+id/text9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text9"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/text9"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text9"-->
+<!--        />-->
 
 </LinearLayout>

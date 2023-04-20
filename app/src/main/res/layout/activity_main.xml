@@ -14,84 +14,110 @@
         android:text="@string/text1"
         />
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text2"
+<!--    <TextView-->
+<!--        android:id="@+id/text2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text2"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/text3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text3"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/text4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text4"-->
+<!--        android:onClick="jumpIntent"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/text10"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text10"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/text20"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text20"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/text30"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text30"-->
+<!--        />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/text31"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/text31"-->
+<!--        android:onClick="updateLanguage"-->
+<!--        />-->
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/radio"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/radio"-->
+<!--            />-->
+
+<!--    </RadioGroup>-->
+
+<!--    <com.hnhy.languageswitch_demo.view.MyPasswordEditText-->
+<!--        android:id="@+id/passedHint"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/passedHint"-->
+<!--        android:inputType="textPassword"-->
+<!--        />-->
+
+<!--    <com.hnhy.languageswitch_demo.view.MyEditText-->
+<!--        android:id="@+id/myEd"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="@string/myEd"-->
+<!--        />-->
+
+    <com.hnhy.languageswitch_demo.view.CircularProgressBar
+        android:id="@+id/cpb_test"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        app:maxProgress="100"
+        app:progress="10"
+        app:progressbarBackgroundColor="#F1F0F0"
+        app:progressbarColor="#FABB5E"
+        app:radius="80dp"
+        app:strokeWidth="16dp"
+        app:text="0%"
+        app:textColor="#FABB5E"
+        app:textSize="28sp"
         />
 
     <Button
-        android:id="@+id/text3"
+        android:id="@+id/btn_random_progress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/text3"
-        />
-
-    <Button
-        android:id="@+id/text4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text4"
-        android:onClick="jumpIntent"
-        />
-
-    <Button
-        android:id="@+id/text10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text10"
-        />
-
-    <Button
-        android:id="@+id/text20"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text20"
-        />
-
-    <Button
-        android:id="@+id/text30"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text30"
-        />
-
-    <Button
-        android:id="@+id/text31"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text31"
-        android:onClick="updateLanguage"
-        />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-
-        <RadioButton
-            android:id="@+id/radio"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio"
-            />
-
-    </RadioGroup>
-
-    <com.hnhy.languageswitch_demo.view.MyPasswordEditText
-        android:id="@+id/passedHint"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/passedHint"
-        android:inputType="textPassword"
-        />
-
-    <com.hnhy.languageswitch_demo.view.MyEditText
-        android:id="@+id/myEd"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/myEd"
+        android:layout_gravity="center"
+        android:text="@string/btn_random_progress"
+        android:layout_marginTop="5dp"
         />
 
 </LinearLayout>
