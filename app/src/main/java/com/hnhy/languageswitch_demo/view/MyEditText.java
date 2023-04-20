@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 
 import com.hnhy.languageswitch_demo.R;
 
+
 public class MyEditText extends androidx.appcompat.widget.AppCompatEditText {
 
     private Drawable mDeleteDrawable;
