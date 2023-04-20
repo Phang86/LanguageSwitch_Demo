@@ -16,4 +16,5 @@ public class Test {
     public static void showLogi(String msg){
         Log.i(TAG, "showLogi: "+msg);
     }
+
 }
