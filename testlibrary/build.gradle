@@ -23,21 +23,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
-
-//    sourceSets {
-//        main {
-//            res.srcDirs = ['src/main/res', 'src/main/res']
-//        }
-//    }
-
-//    sourceSets {
-//        main.res.srcDirs = ['src/main/res']
-//    }
 }
 
 dependencies {
